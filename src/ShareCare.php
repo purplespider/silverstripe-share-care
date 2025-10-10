@@ -8,18 +8,18 @@ use SilverStripe\Assets\Storage\DBFile;
 use SilverStripe\Control\Director;
 use SilverStripe\Core\Config\Configurable;
 use SilverStripe\Core\Environment;
+use SilverStripe\Core\Extension;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\LiteralField;
-use SilverStripe\ORM\DataExtension;
 use SilverStripe\Security\Member;
 
 /**
  * ShareCare class.
  * Provide previews for sharing content based on Open Graph tags.
  *
- * @extends DataExtension
+ * @extends Extension
  */
-class ShareCare extends DataExtension
+class ShareCare extends Extension
 {
     use Configurable;
 
