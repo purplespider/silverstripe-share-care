@@ -4,17 +4,17 @@ namespace JonoM\ShareCare;
 use JonoM\ShareCare\ShareCare;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\Assets\Image;
+use SilverStripe\Core\Extension;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\LiteralField;
 use SilverStripe\Forms\TextareaField;
 use SilverStripe\Forms\TextField;
-use SilverStripe\ORM\DataExtension;
 
 /**
  * Provide default fields and method customisations to complement Open Graph
  * module with minimal setup.
  */
-class ShareCareFields extends DataExtension
+class ShareCareFields extends Extension
 {
     private static $db = array(
         'OGTitleCustom' => 'Varchar(100)',
