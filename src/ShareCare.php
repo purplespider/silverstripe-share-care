@@ -2,6 +2,7 @@
 
 namespace JonoM\ShareCare;
 
+use Exception;
 use GuzzleHttp\Client;
 use SilverStripe\Assets\Image;
 use SilverStripe\Assets\Storage\DBFile;
@@ -112,7 +113,7 @@ class ShareCare extends Extension
                             'access_token' => $access_token
                         ]
                     ]);
-                } catch (\Exception $e) {
+                } catch (Exception $e) {
                     user_error($e->getMessage(), E_USER_WARNING);
                 }
             }
