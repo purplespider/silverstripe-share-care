@@ -9,8 +9,8 @@
 		"homepage": "http://jonathonmenz.com"
 	}],
 	"require": {
-		"silverstripe/framework": "^4 || ^5",
-		"tractorcow/silverstripe-opengraph": "^4 || ^5",
+		"silverstripe/framework": "^6",
+		"tractorcow/silverstripe-opengraph": "^6",
 	  	"guzzlehttp/guzzle": "*"
 	},
 	"autoload": {
